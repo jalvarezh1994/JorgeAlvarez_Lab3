@@ -25,7 +25,7 @@ public class JorgeAlvarezLab3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String opc = "";
+        String opc;
         do {
             opc = JOptionPane.showInputDialog(
                     "Menu Principal\n"
@@ -47,6 +47,12 @@ public class JorgeAlvarezLab3 {
                     break;
                 case "4":
                     venta();
+                    break;
+                case "5":
+                    listar(Ventas);
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "No es una opción válida");
             }
         } while (!opc.equals("6"));
 
