@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  * @author ofici
  */
 public class MayBach extends Carro {
+
     private int LlantasRepuesto;
 
     public MayBach() {
@@ -29,20 +30,46 @@ public class MayBach extends Carro {
     }
 
     public void setLlantasRepuesto(int LlantasRepuesto) {
-        if (LlantasRepuesto==1||LlantasRepuesto==2) {
-            this.LlantasRepuesto=LlantasRepuesto;
+        if (LlantasRepuesto == 1 || LlantasRepuesto == 2) {
+            this.LlantasRepuesto = LlantasRepuesto;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
         }
     }
 
     @Override
-    public String toString() {
-        return super.toString()+"MayBach{" + "LlantasRepuesto=" + LlantasRepuesto + '}';
+    public void setVelocidadMax(float VelocidadMax) {
+        if (VelocidadMax > 155 && VelocidadMax < 160) {
+            this.VelocidadMax = VelocidadMax;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
+
     }
 
-    
-    
-    
-    
+    @Override
+    public void setKMxGalon(float KMxGalon) {
+        if (KMxGalon > 50 && KMxGalon < 55) {
+            this.KMxGalon = KMxGalon;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
+
+    }
+
+    @Override
+    public void setPrecio(float Precio) {
+        if (Precio > 400000 && Precio < 600000) {
+            this.Precio = Precio;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "MayBach{" + "LlantasRepuesto=" + LlantasRepuesto + '}';
+    }
+
 }
