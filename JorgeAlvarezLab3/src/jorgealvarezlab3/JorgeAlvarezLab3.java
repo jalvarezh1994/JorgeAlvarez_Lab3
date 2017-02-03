@@ -170,7 +170,7 @@ public class JorgeAlvarezLab3 {
             case "2":
                 int pos2 = Integer.parseInt(JOptionPane.showInputDialog(listarMorganAero8(Carros) + "Ingrese la posicion de lo que desea modificar"));
                 if (Carros.get(pos2) instanceof MorganAero8 && (pos2 >= 0 || pos2 < Carros.size())) {
-                    addmodMayBach(pos2);
+                    addmodMorganAero8(pos2);
                 } else {
                     JOptionPane.showMessageDialog(null, "No es una opción válida");
                 }
@@ -178,14 +178,14 @@ public class JorgeAlvarezLab3 {
             case "3":
                 int pos3 = Integer.parseInt(JOptionPane.showInputDialog(listarFiskerAutomotive(Carros) + "Ingrese la posicion de lo que desea modificar"));
                 if (Carros.get(pos3) instanceof FiskerAutomotive && (pos3 >= 0 || pos3 < Carros.size())) {
-                    addmodMayBach(pos3);
+                    addmodFiskerAutomotive(pos3);
                 } else {
                     JOptionPane.showMessageDialog(null, "No es una opción válida");
                 }
             case "4":
                 int pos4 = Integer.parseInt(JOptionPane.showInputDialog(listarTramontana(Carros) + "Ingrese la posicion de lo que desea modificar"));
                 if (Carros.get(pos4) instanceof Tramontana && (pos4 >= 0 || pos4 < Carros.size())) {
-                    addmodMayBach(pos4);
+                    addmodTramontana(pos4);
                 } else {
                     JOptionPane.showMessageDialog(null, "No es una opción válida");
                 }
