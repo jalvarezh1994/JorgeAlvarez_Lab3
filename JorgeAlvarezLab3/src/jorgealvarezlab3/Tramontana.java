@@ -53,7 +53,7 @@ public class Tramontana extends Carro {
 
     @Override
     public void setVelocidadMax(float VelocidadMax) {
-        if (VelocidadMax >= 155 && VelocidadMax <= 160) {
+            if (VelocidadMax >= 175 && VelocidadMax <= 180) {
             this.VelocidadMax = VelocidadMax;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
@@ -73,7 +73,7 @@ public class Tramontana extends Carro {
 
     @Override
     public void setPrecio(float Precio) {
-        if (Precio >= 400000 && Precio <= 600000) {
+        if (Precio >= 800000 && Precio <= 1000000) {
             this.Precio = Precio;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
