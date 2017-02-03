@@ -64,7 +64,6 @@ public class MayBach extends Carro {
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
         }
-
     }
 
     @Override

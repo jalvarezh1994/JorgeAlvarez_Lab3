@@ -6,6 +6,7 @@
 package jorgealvarezlab3;
 
 import java.util.Date;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -30,6 +31,10 @@ public class FiskerAutomotive extends Carro{
     }
 
     public void setCamionetaOTurismo(String CamionetaOTurismo) {
+        if (CamionetaOTurismo.equalsIgnoreCase("camioneta")||CamionetaOTurismo.equalsIgnoreCase("turismo")) {
+            
+        } else {
+        }
         this.CamionetaOTurismo = CamionetaOTurismo;
     }
 
@@ -41,7 +46,35 @@ public class FiskerAutomotive extends Carro{
         this.Convertible = Convertible;
     }
 
-    
+        @Override
+    public void setVelocidadMax(float VelocidadMax) {
+        if (VelocidadMax > 155 && VelocidadMax < 160) {
+            this.VelocidadMax = VelocidadMax;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
+
+    }
+
+    @Override
+    public void setKMxGalon(float KMxGalon) {
+        if (KMxGalon > 50 && KMxGalon < 55) {
+            this.KMxGalon = KMxGalon;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
+
+    }
+
+    @Override
+    public void setPrecio(float Precio) {
+        if (Precio > 400000 && Precio < 600000) {
+            this.Precio = Precio;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
+    }
+
     @Override
     public String toString() {
         return super.toString()+"FiskerAutomotive{" + "CamionetaOTurismo=" + CamionetaOTurismo + ", Convertible=" + Convertible + '}';
