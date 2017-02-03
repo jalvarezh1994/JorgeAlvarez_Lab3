@@ -12,14 +12,15 @@ import javax.swing.JOptionPane;
  *
  * @author ofici
  */
-public class FiskerAutomotive extends Carro{
+public class FiskerAutomotive extends Carro {
+
     private String CamionetaOTurismo;
     private String Convertible;
 
     public FiskerAutomotive() {
         super();
     }
-    
+
     public FiskerAutomotive(String CamionetaOTurismo, String Convertible, String noSerie, Date FechaEnsamblado, java.awt.Color Color, String MarcaDeLlantas, String Polarizado, float VelocidadMax, float KMxGalon, float Precio) {
         super(noSerie, FechaEnsamblado, Color, MarcaDeLlantas, Polarizado, VelocidadMax, KMxGalon, Precio);
         this.CamionetaOTurismo = CamionetaOTurismo;
@@ -31,11 +32,12 @@ public class FiskerAutomotive extends Carro{
     }
 
     public void setCamionetaOTurismo(String CamionetaOTurismo) {
-        if (CamionetaOTurismo.equalsIgnoreCase("camioneta")||CamionetaOTurismo.equalsIgnoreCase("turismo")) {
-            
+        if (CamionetaOTurismo.equalsIgnoreCase("camioneta") || CamionetaOTurismo.equalsIgnoreCase("turismo")) {
+            this.CamionetaOTurismo = CamionetaOTurismo;
         } else {
+            JOptionPane.showMessageDialog(null, "No es una opción válida");
         }
-        this.CamionetaOTurismo = CamionetaOTurismo;
+
     }
 
     public String getConvertible() {
@@ -43,12 +45,17 @@ public class FiskerAutomotive extends Carro{
     }
 
     public void setConvertible(String Convertible) {
-        this.Convertible = Convertible;
+        if (Convertible.equalsIgnoreCase("convertible") || Convertible.equalsIgnoreCase("sencillo")) {
+            this.Convertible = Convertible;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es una opción válida");
+        }
+
     }
 
-        @Override
+    @Override
     public void setVelocidadMax(float VelocidadMax) {
-        if (VelocidadMax > 155 && VelocidadMax < 160) {
+        if (VelocidadMax >= 160 && VelocidadMax <= 165) {
             this.VelocidadMax = VelocidadMax;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
@@ -58,7 +65,7 @@ public class FiskerAutomotive extends Carro{
 
     @Override
     public void setKMxGalon(float KMxGalon) {
-        if (KMxGalon > 50 && KMxGalon < 55) {
+        if (KMxGalon >= 50 && KMxGalon <= 60) {
             this.KMxGalon = KMxGalon;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
@@ -68,7 +75,7 @@ public class FiskerAutomotive extends Carro{
 
     @Override
     public void setPrecio(float Precio) {
-        if (Precio > 400000 && Precio < 600000) {
+        if (Precio >= 450000 && Precio <= 650000) {
             this.Precio = Precio;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
@@ -77,8 +84,7 @@ public class FiskerAutomotive extends Carro{
 
     @Override
     public String toString() {
-        return super.toString()+"FiskerAutomotive{" + "CamionetaOTurismo=" + CamionetaOTurismo + ", Convertible=" + Convertible + '}';
+        return super.toString() + "FiskerAutomotive{" + "CamionetaOTurismo=" + CamionetaOTurismo + ", Convertible=" + Convertible + '}';
     }
-    
-    
+
 }

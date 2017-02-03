@@ -47,7 +47,7 @@ public class MorganAero8 extends Carro {
 
         @Override
     public void setVelocidadMax(float VelocidadMax) {
-        if (VelocidadMax > 140 && VelocidadMax < 145) {
+        if (VelocidadMax >= 140 && VelocidadMax <= 145) {
             this.VelocidadMax = VelocidadMax;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
@@ -57,7 +57,7 @@ public class MorganAero8 extends Carro {
 
     @Override
     public void setKMxGalon(float KMxGalon) {
-        if (KMxGalon > 35 && KMxGalon < 40) {
+        if (KMxGalon >= 35 && KMxGalon <= 40) {
             this.KMxGalon = KMxGalon;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
@@ -67,7 +67,7 @@ public class MorganAero8 extends Carro {
 
     @Override
     public void setPrecio(float Precio) {
-        if (Precio > 500000 && Precio < 700000) {
+        if (Precio >= 500000 && Precio <= 700000) {
             this.Precio = Precio;
         } else {
             JOptionPane.showMessageDialog(null, "No es válido");
