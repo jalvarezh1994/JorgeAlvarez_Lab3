@@ -541,7 +541,7 @@ public class JorgeAlvarezLab3 {
                     break;
                 }
             case "10":
-                ((Tramontana) (Carros.get(pos))).setTransmision(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los cambios de transmisión")));
+                ((Tramontana) (Carros.get(pos))).setTransmision(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los cambios de transmisión (6 o 7)")));
                 if (!agregar) {
                     break;
                 }

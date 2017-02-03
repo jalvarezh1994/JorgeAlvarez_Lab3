@@ -32,7 +32,11 @@ public class Tramontana extends Carro {
     }
 
     public void setPeso(float Peso) {
-        this.Peso = Peso;
+        if (Peso >= 1276 && Peso <= 1376) {
+            this.Peso = Peso;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
     }
 
     public int getTransmision() {
@@ -40,7 +44,11 @@ public class Tramontana extends Carro {
     }
 
     public void setTransmision(int Transmision) {
-        this.Transmision = Transmision;
+        if (Transmision == 6 || Transmision == 7) {
+            this.Transmision = Transmision;
+        } else {
+            JOptionPane.showMessageDialog(null, "No es válido");
+        }
     }
 
     @Override
