@@ -254,31 +254,31 @@ public class JorgeAlvarezLab3 {
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "4":
                 Carros.get(pos).setMarcaDeLlantas(JOptionPane.showInputDialog("Ingrese la marca de llantas"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "5":
                 Carros.get(pos).setNoSerie(JOptionPane.showInputDialog("Ingrese número de serie"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "6":
                 Carros.get(pos).setPolarizado(JOptionPane.showInputDialog("Ingrese si es polarizado o no"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "7":
                 Carros.get(pos).setPrecio(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el precio de venta")));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "8":
                 Carros.get(pos).setVelocidadMax(Float.parseFloat(JOptionPane.showInputDialog("Ingrese Kilómetros por galón")));
                 if (!agregar) {
@@ -335,31 +335,31 @@ public class JorgeAlvarezLab3 {
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "4":
                 Carros.get(pos).setMarcaDeLlantas(JOptionPane.showInputDialog("Ingrese la marca de llantas"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "5":
                 Carros.get(pos).setNoSerie(JOptionPane.showInputDialog("Ingrese número de serie"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "6":
                 Carros.get(pos).setPolarizado(JOptionPane.showInputDialog("Ingrese si es polarizado o no"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "7":
                 Carros.get(pos).setPrecio(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el precio de venta")));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "8":
                 Carros.get(pos).setVelocidadMax(Float.parseFloat(JOptionPane.showInputDialog("Ingrese Kilómetros por galón")));
                 if (!agregar) {
@@ -420,31 +420,31 @@ public class JorgeAlvarezLab3 {
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "4":
                 Carros.get(pos).setMarcaDeLlantas(JOptionPane.showInputDialog("Ingrese la marca de llantas"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "5":
                 Carros.get(pos).setNoSerie(JOptionPane.showInputDialog("Ingrese número de serie"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "6":
                 Carros.get(pos).setPolarizado(JOptionPane.showInputDialog("Ingrese si es polarizado o no"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "7":
                 Carros.get(pos).setPrecio(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el precio de venta")));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "8":
                 Carros.get(pos).setVelocidadMax(Float.parseFloat(JOptionPane.showInputDialog("Ingrese Kilómetros por galón")));
                 if (!agregar) {
@@ -504,31 +504,31 @@ public class JorgeAlvarezLab3 {
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "4":
                 Carros.get(pos).setMarcaDeLlantas(JOptionPane.showInputDialog("Ingrese la marca de llantas"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "5":
                 Carros.get(pos).setNoSerie(JOptionPane.showInputDialog("Ingrese número de serie"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "6":
                 Carros.get(pos).setPolarizado(JOptionPane.showInputDialog("Ingrese si es polarizado o no"));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "7":
                 Carros.get(pos).setPrecio(Float.parseFloat(JOptionPane.showInputDialog("Ingrese el precio de venta")));
                 if (!agregar) {
                     break;
                 }
-                break;
+                
             case "8":
                 Carros.get(pos).setVelocidadMax(Float.parseFloat(JOptionPane.showInputDialog("Ingrese Kilómetros por galón")));
                 if (!agregar) {
